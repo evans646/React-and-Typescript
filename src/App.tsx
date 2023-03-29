@@ -3,21 +3,20 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  //let firstValue: string="Jack";
+  //let firstValue: number="Jack";//error
+  //let firstValue: number=12; //The value 12 is of number type!
+
+let firstValue:Array<string>=["Jack","Evans"]
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          The value {firstValue} is of {typeof firstValue} type!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </header>
     </div>
   );
